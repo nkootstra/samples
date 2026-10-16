@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="FirstAgent/FirstAgent.csproj" />
+  <Project Path="FirstAgent.AppHost/FirstAgent.AppHost.csproj" />
+  <Project Path="FirstAgent.Tests/FirstAgent.Tests.csproj" />
+</Solution>

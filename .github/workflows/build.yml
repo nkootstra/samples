@@ -1,0 +1,50 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  # Every folder with a .slnx file is a sample.
+  find-samples:
+    runs-on: ubuntu-latest
+    outputs:
+      samples: ${{ steps.find.outputs.samples }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: find
+        run: |
+          samples=$(find . -name '*.slnx' -not -path './.git/*' -exec dirname {} \; | sed 's#^\./##' | sort | jq -Rsc 'split("\n") | map(select(. != ""))')
+          echo "samples=$samples" >> "$GITHUB_OUTPUT"
+
+  sample:
+    needs: find-samples
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        sample: ${{ fromJson(needs.find-samples.outputs.samples) }}
+    name: ${{ matrix.sample }}
+    defaults:
+      run:
+        working-directory: ${{ matrix.sample }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: ${{ matrix.sample }}/global.json
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles(format('{0}/Directory.Packages.props', matrix.sample), format('{0}/**/*.csproj', matrix.sample)) }}
+
+      # The tests stub the chat client, so no API key is needed.
+      - run: dotnet restore
+      - run: dotnet format --verify-no-changes --no-restore
+      - run: dotnet test --no-restore
