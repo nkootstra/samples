@@ -1,0 +1,5 @@
+{
+  "appHost": {
+    "path": "FirstWorkflow.AppHost/FirstWorkflow.AppHost.csproj"
+  }
+}

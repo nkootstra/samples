@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="FirstWorkflow/FirstWorkflow.csproj" />
+  <Project Path="FirstWorkflow.AppHost/FirstWorkflow.AppHost.csproj" />
+  <Project Path="FirstWorkflow.Tests/FirstWorkflow.Tests.csproj" />
+</Solution>
