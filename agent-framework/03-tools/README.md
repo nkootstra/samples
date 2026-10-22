@@ -1,6 +1,6 @@
 # Part 3: Tool calling for AI agents in C#
 
-A kitchen assistant with two tools, plain C# methods on a `PantryTools` class: `find_in_pantry` looks up one ingredient, `list_expiring_soon` lists what has to be used first. The app prints the name, description and JSON schema the model sees for each tool, asks what to cook tonight, and prints every tool call, tool result and text in the response. This is the code from [Tool calling for AI agents in C#](https://kootstra.io/writing/maf-tools/).
+A kitchen assistant with two tools, plain C# methods on a `PantryTools` class: `find_in_pantry` looks up one ingredient, `list_expiring_soon` lists what has to be used first. The app prints the name, description and JSON schema the model sees for each tool, asks what to cook tonight, and prints every tool call, tool result and text in the response. This is the code from [Tool calling for AI agents in C#](https://kootstra.io/writing/tool-calling-ai-agents-csharp/).
 
 ## What you need
 

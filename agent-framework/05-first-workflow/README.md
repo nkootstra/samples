@@ -1,6 +1,6 @@
 # Part 5: Planner, then reviewer: two agents in one workflow
 
-Two agents in a row: a planner writes three dinners, a reviewer checks them against the household's rules (no peanuts, fish at most once a week, weekday dinners under 40 minutes). A `WorkflowBuilder` connects them with one edge, so every plan goes through the review. The app streams both agents' text as workflow events, with a header line for each agent. This is the code from [Planner, then reviewer: two agents in one workflow](https://kootstra.io/writing/maf-first-workflow/).
+Two agents in a row: a planner writes three dinners, a reviewer checks them against the household's rules (no peanuts, fish at most once a week, weekday dinners under 40 minutes). A `WorkflowBuilder` connects them with one edge, so every plan goes through the review. The app streams both agents' text as workflow events, with a header line for each agent. This is the code from [Planner, then reviewer: two agents in one workflow](https://kootstra.io/writing/agent-framework-workflow-planner-reviewer/).
 
 ## What you need
 

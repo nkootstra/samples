@@ -1,14 +1,14 @@
 # Microsoft Agent Framework in C#
 
-Code for the series [Microsoft Agent Framework in C#](https://kootstra.io/writing/maf-first-agent/) on kootstra.io. Each part is one app with a kitchen assistant on Anthropic's Claude Haiku 5.5, built with Microsoft Agent Framework 1.24.0 on .NET 10.
+Code for the series [Microsoft Agent Framework in C#](https://kootstra.io/writing/microsoft-agent-framework-first-csharp-agent/) on kootstra.io. Each part is one app with a kitchen assistant on Anthropic's Claude Haiku 5.5, built with Microsoft Agent Framework 1.24.0 on .NET 10.
 
 | Part | Sample | Article | Run with |
 | --- | --- | --- | --- |
-| 1 | [01-first-agent](01-first-agent/) | [Microsoft Agent Framework: your first C# agent](https://kootstra.io/writing/maf-first-agent/) | `dotnet run` |
-| 2 | [02-sessions](02-sessions/) | [Remembering the conversation with agent sessions](https://kootstra.io/writing/maf-sessions/) | `dotnet run` |
-| 3 | [03-tools](03-tools/) | [Tool calling for AI agents in C#](https://kootstra.io/writing/maf-tools/) | `dotnet run` |
-| 4 | [04-tool-approval](04-tool-approval/) | [Human-in-the-loop tool approval in C#](https://kootstra.io/writing/maf-tool-approval/) | `dotnet run` (asks for input) |
-| 5 | [05-first-workflow](05-first-workflow/) | [Planner, then reviewer: two agents in one workflow](https://kootstra.io/writing/maf-first-workflow/) | `dotnet run` |
+| 1 | [01-first-agent](01-first-agent/) | [Microsoft Agent Framework: your first C# agent](https://kootstra.io/writing/microsoft-agent-framework-first-csharp-agent/) | `dotnet run` |
+| 2 | [02-sessions](02-sessions/) | [Remembering the conversation with agent sessions](https://kootstra.io/writing/agent-framework-sessions-csharp/) | `dotnet run` |
+| 3 | [03-tools](03-tools/) | [Tool calling for AI agents in C#](https://kootstra.io/writing/tool-calling-ai-agents-csharp/) | `dotnet run` |
+| 4 | [04-tool-approval](04-tool-approval/) | [Human-in-the-loop tool approval in C#](https://kootstra.io/writing/human-in-the-loop-tool-approval-csharp/) | `dotnet run` (asks for input) |
+| 5 | [05-first-workflow](05-first-workflow/) | [Planner, then reviewer: two agents in one workflow](https://kootstra.io/writing/agent-framework-workflow-planner-reviewer/) | `dotnet run` |
 
 Every part runs with `dotnet run` and the key in `ANTHROPIC_API_KEY`. Parts 1 to 3 and 5 also have an Aspire AppHost, which their READMEs describe as an optional way to run them. Part 4 has none: it reads your answer from the console, and Aspire doesn't connect a terminal to the apps it runs.
 

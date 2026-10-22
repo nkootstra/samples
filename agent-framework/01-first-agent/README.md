@@ -1,6 +1,6 @@
 # Part 1: Microsoft Agent Framework: your first C# agent
 
-A console app with one agent, a kitchen assistant on Claude Haiku 5.5. It asks one question and prints the answer, the token usage and the finish reason, warns when the answer stopped at the output token limit, then streams a second answer as it arrives. This is the code from [Microsoft Agent Framework: your first C# agent](https://kootstra.io/writing/maf-first-agent/).
+A console app with one agent, a kitchen assistant on Claude Haiku 5.5. It asks one question and prints the answer, the token usage and the finish reason, warns when the answer stopped at the output token limit, then streams a second answer as it arrives. This is the code from [Microsoft Agent Framework: your first C# agent](https://kootstra.io/writing/microsoft-agent-framework-first-csharp-agent/).
 
 ## What you need
 

@@ -1,6 +1,6 @@
 # Part 2: Remembering the conversation with agent sessions
 
-A kitchen assistant that keeps a conversation in an `AgentSession`. It asks a question and a follow-up on the same session, prints the stored history, shows the input token count growing with each turn, saves the session as JSON and restores it to ask one more question. `KitchenChat.cs` holds the article's web example: it starts a conversation with a server-chosen ID and loads a stored session only for the user who owns it. This is the code from [Remembering the conversation with agent sessions](https://kootstra.io/writing/maf-sessions/).
+A kitchen assistant that keeps a conversation in an `AgentSession`. It asks a question and a follow-up on the same session, prints the stored history, shows the input token count growing with each turn, saves the session as JSON and restores it to ask one more question. `KitchenChat.cs` holds the article's web example: it starts a conversation with a server-chosen ID and loads a stored session only for the user who owns it. This is the code from [Remembering the conversation with agent sessions](https://kootstra.io/writing/agent-framework-sessions-csharp/).
 
 ## What you need
 

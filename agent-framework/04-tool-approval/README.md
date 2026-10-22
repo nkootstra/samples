@@ -1,6 +1,6 @@
 # Part 4: Human-in-the-loop tool approval in C#
 
-A kitchen assistant with a shopping list and two tools: one reads the list, the other adds to it and is wrapped in `ApprovalRequiredAIFunction`. When the model wants to add something, the run stops and the console shows the exact call. You answer `y`, `n` or type a new message, and the conversation continues on the same session. This is the code from [Human-in-the-loop tool approval in C#](https://kootstra.io/writing/maf-tool-approval/), with the final approval loop that also handles a new message.
+A kitchen assistant with a shopping list and two tools: one reads the list, the other adds to it and is wrapped in `ApprovalRequiredAIFunction`. When the model wants to add something, the run stops and the console shows the exact call. You answer `y`, `n` or type a new message, and the conversation continues on the same session. This is the code from [Human-in-the-loop tool approval in C#](https://kootstra.io/writing/human-in-the-loop-tool-approval-csharp/), with the final approval loop that also handles a new message.
 
 ## What you need
 
