@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="KitchenDate/KitchenDate.csproj" />
+  <Project Path="KitchenDate.AppHost/KitchenDate.AppHost.csproj" />
+  <Project Path="KitchenDate.Tests/KitchenDate.Tests.csproj" />
+</Solution>
