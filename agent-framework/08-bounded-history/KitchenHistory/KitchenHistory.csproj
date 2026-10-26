@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- The article declares its types without a namespace, to keep the listings short.
+         The chat reducers (MEAI001) and the compaction API (MAAI001) are experimental. -->
+    <NoWarn>$(NoWarn);CA1050;MEAI001;MAAI001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Agents.AI" />
+    <PackageReference Include="Microsoft.Agents.AI.Anthropic" />
+  </ItemGroup>
+
+</Project>
