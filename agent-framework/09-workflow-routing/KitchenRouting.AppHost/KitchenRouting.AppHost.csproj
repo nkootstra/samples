@@ -1,0 +1,14 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.6.1">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UserSecretsId>kootstra-samples</UserSecretsId>
+    <!-- Use the orchestrator from NuGet, so `dotnet run` and CI work without the Aspire CLI. -->
+    <NoWarn>$(NoWarn);ASPIRE010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../KitchenRouting/KitchenRouting.csproj" />
+  </ItemGroup>
+
+</Project>
