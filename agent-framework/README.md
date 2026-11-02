@@ -13,8 +13,9 @@ Code for the series [Microsoft Agent Framework in C#](https://kootstra.io/writin
 | 7 | [07-structured-output](07-structured-output/) | [Agent Framework structured output in C# with Claude](https://kootstra.io/writing/structured-output-ai-agent-csharp/) | `dotnet run` |
 | 8 | [08-bounded-history](08-bounded-history/) | [Agent Framework chat history compaction in C# with Claude](https://kootstra.io/writing/chat-history-compaction-ai-agent-csharp/) | `dotnet run` |
 | 9 | [09-workflow-routing](09-workflow-routing/) | [Agent Framework workflow routing in C# with Claude](https://kootstra.io/writing/agent-framework-workflow-routing-csharp/) | `dotnet run` |
+| 10 | [10-workflow-parallel](10-workflow-parallel/) | [Agent Framework fan-out, fan-in and loops in C# with Claude](https://kootstra.io/writing/agent-framework-fan-out-fan-in-csharp/) | `dotnet run` |
 
-Every part runs with `dotnet run` and the key in `ANTHROPIC_API_KEY`. Parts 1 to 3 and 5 to 9 also have an Aspire AppHost, which their READMEs describe as an optional way to run them. Part 4 has none: it reads your answer from the console, and Aspire doesn't connect a terminal to the apps it runs.
+Every part runs with `dotnet run` and the key in `ANTHROPIC_API_KEY`. Parts 1 to 3 and 5 to 10 also have an Aspire AppHost, which their READMEs describe as an optional way to run them. Part 4 has none: it reads your answer from the console, and Aspire doesn't connect a terminal to the apps it runs.
 
 ## Before you start
 
@@ -24,12 +25,13 @@ Install the .NET 10 SDK and get an Anthropic API key, as described in [docs/prer
 
 | Package | Version | Parts |
 | --- | --- | --- |
-| `Microsoft.Agents.AI`, `Microsoft.Agents.AI.Anthropic` | 1.24.0 | 1 to 9 |
-| `Microsoft.Agents.AI.Workflows` | 1.24.0 | 5, 9 |
+| `Microsoft.Agents.AI`, `Microsoft.Agents.AI.Anthropic` | 1.24.0 | 1 to 10 |
+| `Microsoft.Agents.AI.Workflows` | 1.24.0 | 5, 9, 10 |
+| `Microsoft.Agents.AI.Workflows.Generators` | 1.24.0 | 10 |
 | `Microsoft.Extensions.TimeProvider.Testing` | 10.10.0 | 6 (tests) |
-| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.1 | 1, 2, 3, 5, 6, 7, 8, 9 |
-| xUnit (`xunit.v3.mtp-v2`) | 4.0.1 | 1 to 9 |
-| `NSubstitute`, `NSubstitute.Analyzers.CSharp` | 6.2.0, 1.0.17 | 1 to 9 |
-| .NET SDK | 10.0.100 or later | 1 to 9 |
+| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.1 | 1, 2, 3, 5, 6, 7, 8, 9, 10 |
+| xUnit (`xunit.v3.mtp-v2`) | 4.0.1 | 1 to 10 |
+| `NSubstitute`, `NSubstitute.Analyzers.CSharp` | 6.2.0, 1.0.17 | 1 to 10 |
+| .NET SDK | 10.0.100 or later | 1 to 10 |
 
 Each sample pins its own versions in its `Directory.Packages.props`.

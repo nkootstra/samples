@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="KitchenChecks/KitchenChecks.csproj" />
+  <Project Path="KitchenChecks.AppHost/KitchenChecks.AppHost.csproj" />
+  <Project Path="KitchenChecks.Tests/KitchenChecks.Tests.csproj" />
+</Solution>
