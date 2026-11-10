@@ -17,8 +17,9 @@ Code for the series [Microsoft Agent Framework in C#](https://kootstra.io/writin
 | 11 | [11-workflow-people](11-workflow-people/) | [Agent Framework workflow checkpoints in C# with Claude](https://kootstra.io/writing/agent-framework-workflow-checkpoints-csharp/) | `dotnet run`, twice (asks for input) |
 | 12 | [12-observability](12-observability/) | [Agent Framework OpenTelemetry tracing in C# with Claude](https://kootstra.io/writing/agent-framework-opentelemetry-tracing-csharp/) | `dotnet run` (spans in the terminal) or `aspire run` |
 | 13 | [13-devui](13-devui/) | [Agent Framework DevUI in C# with Claude](https://kootstra.io/writing/agent-framework-devui-csharp/) | `aspire run` (keeps running) |
+| 14 | [14-testing-agents](14-testing-agents/) | [Agent Framework tests and pass rates in C# with Claude](https://kootstra.io/writing/agent-framework-testing-agents-csharp/) | `dotnet run` (40 runs against Claude) |
 
-Every part runs with `dotnet run` and the key in `ANTHROPIC_API_KEY`. Parts 1 to 3, 5 to 10, 12 and 13 also have an Aspire AppHost, which their READMEs describe as an optional way to run them. Parts 4 and 11 have none: they read your answer from the console, and Aspire doesn't connect a terminal to the apps it runs.
+Every part runs with `dotnet run` and the key in `ANTHROPIC_API_KEY`. Parts 1 to 3, 5 to 10 and 12 to 14 also have an Aspire AppHost, which their READMEs describe as an optional way to run them. Parts 4 and 11 have none: they read your answer from the console, and Aspire doesn't connect a terminal to the apps it runs.
 
 ## Before you start
 
@@ -28,7 +29,7 @@ Install the .NET 10 SDK and get an Anthropic API key, as described in [docs/prer
 
 | Package | Version | Parts |
 | --- | --- | --- |
-| `Microsoft.Agents.AI`, `Microsoft.Agents.AI.Anthropic` | 1.24.0 | 1 to 13 |
+| `Microsoft.Agents.AI`, `Microsoft.Agents.AI.Anthropic` | 1.24.0 | 1 to 14 |
 | `Microsoft.Agents.AI.Workflows` | 1.24.0 | 5, 9, 10, 11, 12, 13 |
 | `Microsoft.Agents.AI.Workflows.Generators` | 1.24.0 | 10, 11 |
 | `Microsoft.Agents.AI.DevUI` | 1.24.0-preview.261006.1 | 13 |
@@ -37,9 +38,9 @@ Install the .NET 10 SDK and get an Anthropic API key, as described in [docs/prer
 | `OpenTelemetry`, `OpenTelemetry.Exporter.OpenTelemetryProtocol`, `OpenTelemetry.Exporter.Console` | 1.19.1 | 12 |
 | `Microsoft.AspNetCore.Mvc.Testing` | 10.0.12 | 13 |
 | `Microsoft.Extensions.TimeProvider.Testing` | 10.10.0 | 6 (tests) |
-| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.1 | 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13 |
-| xUnit (`xunit.v3.mtp-v2`) | 4.0.1 | 1 to 13 |
-| `NSubstitute`, `NSubstitute.Analyzers.CSharp` | 6.2.0, 1.0.17 | 1 to 13 |
-| .NET SDK | 10.0.100 or later | 1 to 13 |
+| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.1 | 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13, 14 |
+| xUnit (`xunit.v3.mtp-v2`) | 4.0.1 | 1 to 14 |
+| `NSubstitute`, `NSubstitute.Analyzers.CSharp` | 6.2.0, 1.0.17 | 1 to 14 |
+| .NET SDK | 10.0.100 or later | 1 to 14 |
 
 Each sample pins its own versions in its `Directory.Packages.props`.

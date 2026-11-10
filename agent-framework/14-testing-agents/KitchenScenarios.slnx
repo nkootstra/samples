@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="KitchenScenarios/KitchenScenarios.csproj" />
+  <Project Path="KitchenScenarios.AppHost/KitchenScenarios.AppHost.csproj" />
+  <Project Path="KitchenScenarios.Tests/KitchenScenarios.Tests.csproj" />
+</Solution>
