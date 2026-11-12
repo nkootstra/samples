@@ -32,7 +32,7 @@ Windows (PowerShell):
 irm https://aspire.dev/install.ps1 | iex
 ```
 
-Open a new terminal and check the version. The samples were built with Aspire 13.6.1:
+Open a new terminal and check the version. The samples were built with Aspire 13.6.5:
 
 ```sh
 aspire --version

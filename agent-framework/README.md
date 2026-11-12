@@ -39,7 +39,7 @@ Install the .NET 10 SDK and get an Anthropic API key, as described in [docs/prer
 | `OpenTelemetry`, `OpenTelemetry.Exporter.OpenTelemetryProtocol`, `OpenTelemetry.Exporter.Console` | 1.19.1 | 12 |
 | `Microsoft.AspNetCore.Mvc.Testing` | 10.0.12 | 13 |
 | `Microsoft.Extensions.TimeProvider.Testing` | 10.10.0 | 6 (tests) |
-| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.1 | 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15 |
+| Aspire (`Aspire.AppHost.Sdk`, `Aspire.Hosting.Testing`) | 13.6.5 | 1, 2, 3, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15 |
 | xUnit (`xunit.v3.mtp-v2`) | 4.0.1 | 1 to 15 |
 | `NSubstitute`, `NSubstitute.Analyzers.CSharp` | 6.2.0, 1.0.17 | 1 to 15 |
 | .NET SDK | 10.0.100 or later | 1 to 15 |
