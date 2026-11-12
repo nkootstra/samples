@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Agents.AI" />
+    <PackageReference Include="Microsoft.Agents.AI.Anthropic" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Quality" />
+    <PackageReference Include="Microsoft.Extensions.AI.Evaluation.Reporting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="KitchenEvals.Tests" />
+  </ItemGroup>
+
+</Project>
